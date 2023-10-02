@@ -4,7 +4,7 @@ import { UserAuth } from "../auth-provider/AuthProvider";
 
 const LoginForm = () => {
 
-    const {continueWithGoogle, logInWithEmail} = useContext(UserAuth);
+    const {continueWithGoogle, logInWithEmail, continueWithGithub} = useContext(UserAuth);
 
     const handleLogin = (callback) => {
         callback()
@@ -56,8 +56,9 @@ const LoginForm = () => {
                                 <button className="btn btn-primary">Login</button>
                             </div>
                         </form>
-                        <section>
+                        <section className="space-y-2">
                             <button onClick={() => handleLogin(continueWithGoogle)} className="btn btn-primary w-full">Continue with Google</button>
+                            <button onClick={() => handleLogin(continueWithGithub)} className="btn btn-primary w-full">Continue with Github</button>
                         </section>
                         <Link to={`/login/register-form`}>New here? Please Register</Link>
                     </div>

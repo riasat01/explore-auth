@@ -9,7 +9,7 @@ const Navbar = () => {
     const handleSignOut = () => {
         logOut()
         .then(() => alert(`User logged out`))
-        .catch(error => console.error());
+        .catch(error => console.log(error.message));
     }
     console.log(user)
     // useEffect(() => {
@@ -44,7 +44,8 @@ const Navbar = () => {
                 
             </ul>
             {
-                user?.email ?
+                user?.providerId
+                ?
                 <section className="flex gap-6 justify-center items-center">
                     <p>Name: {user?.displayName}</p>
                     <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>

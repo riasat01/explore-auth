@@ -4,7 +4,7 @@ import { UserAuth } from '../auth-provider/AuthProvider';
 
 const RegisterForm = () => {
 
-    const { continueWithGoogle, createAccountWithemail } = useContext(UserAuth);
+    const { continueWithGoogle, createAccountWithemail, continueWithGithub, handleUpdateUserInfo } = useContext(UserAuth);
 
     const handleRegister = (callback) => {
         callback()
@@ -24,6 +24,9 @@ const RegisterForm = () => {
         createAccountWithemail(e.target.email.value, e.target.password.value)
         .then(userCredintial => {
             console.log(userCredintial.user);
+            handleUpdateUserInfo(e.target.name.value)
+            .then(()=> alert(`user name updated`))
+            .catch(error => console.log(error.message));
         })
         .catch(error => {
             console.log(error.message);
@@ -63,8 +66,9 @@ const RegisterForm = () => {
                                 <button className="btn btn-primary">Register</button>
                             </div>
                         </form>
-                        <section>
+                        <section className='space-y-2'>
                             <button onClick={() => handleRegister(continueWithGoogle)} className="btn btn-primary w-full">Continue with Google</button>
+                            <button onClick={() => handleRegister(continueWithGithub)} className="btn btn-primary w-full">Continue with Github</button>
                         </section>
                         <Link to={`/login`}>Already have an account? Please  Login</Link>
                     </div>

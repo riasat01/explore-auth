@@ -8,6 +8,7 @@ import ProductDetails from "../pages/product-details/ProductDetails";
 import LoginForm from "../components/login-form/LoginForm";
 import RegisterForm from "../components/register-form/RegisterForm";
 import About from "../pages/about/About";
+import PrivateRoute from "../components/private-route/PrivateRoute";
 
 const MyRouter = createBrowserRouter([
     {
@@ -45,7 +46,7 @@ const MyRouter = createBrowserRouter([
             {
                 path: '/product/:id',
                 loader: () => fetch(`../anime.json`),
-                element: <ProductDetails></ProductDetails>
+                element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>
             }
         ]
     }
