@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
 
-    const { id, name, release_date, img } = product;
+    const { id, name, release_date } = product;
     return (
         <div className="card card-compact bg-base-100 shadow-xl">
-            <figure><img src={img} alt={name} className="w-full"/></figure>
+            <figure><img src="../banner.jpeg" alt={name} className="w-full"/></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
                 <p>{release_date}</p>
