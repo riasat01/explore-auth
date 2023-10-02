@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "name": "Naruto",
+      "description": "Naruto Uzumaki, a young ninja with a sealed demon fox spirit, dreams of becoming the Hokage, the strongest ninja in his village.",
+      "release_date": "October 3, 2002",
+      "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWRAXgO8QzAtKVf5JnltnhmwBq3DwbRTYSeYAgVVQuRzcAaDj2pPgZAt7TFcaa"
+    },
+    {
+      "id": 2,
+      "name": "Death Note",
+      "description": "Light Yagami discovers a mysterious notebook that allows him to kill anyone whose name he writes in it, leading to a deadly game of wits with a genius detective.",
+      "release_date": "October 4, 2006",
+      "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_SPV0ccjDuyDM3LPPIeQ-rCQeEeWXraznEAioBNtegbG2xGk3XYVLry2_Yipw"
+    },
+    {
+      "id": 3,
+      "name": "Attack on Titan",
+      "description": "In a world where humanity is on the brink of extinction due to giant humanoid creatures, Eren Yeager and his friends join the fight for survival.",
+      "release_date": "April 7, 2013",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-6exJXcpOGp0JWQXIetDP3L-7fB5VCLwWdjjsUb0GXBWj7qGWylzxMYmP79-R"
+    },
+    {
+      "id": 4,
+      "name": "One Piece",
+      "description": "Monkey D. Luffy and his pirate crew search for the ultimate treasure, the One Piece, in a world of adventure and danger.",
+      "release_date": "October 20, 1999",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9d0cCV5qhPVhTmic-mk80VYGhElldGJnmGrJHXMFrfOwqfsttpKOwuJ46hA2I"
+    },
+    {
+      "id": 5,
+      "name": "My Hero Academia",
+      "description": "In a world where most people have superpowers, a young boy named Izuku Midoriya dreams of becoming a hero despite being born without any powers.",
+      "release_date": "April 3, 2016",
+      "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVZ1oyWf2aUpZuWKXnFHm7WmRPxRxWBzNPa-CGOlo_XFj7d34_LbjSw-ia9nIJ"
+    },
+    {
+      "id": 6,
+      "name": "Demon Slayer: Kimetsu no Yaiba",
+      "description": "Tanjiro Kamado, a young boy turned demon slayer, seeks revenge against the demons who slaughtered his family and turned his sister into one.",
+      "release_date": "April 6, 2019",
+      "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx4RMGeCP2j4k7scwm9RWd3qVKU5swogiyr7SiANAFl3rnGYRLQ6dDYgBbH6pz"
+    },
+    {
+      "id": 7,
+      "name": "Fullmetal Alchemist: Brotherhood",
+      "description": "Two brothers, Edward and Alphonse Elric, use alchemy to search for the Philosopher's Stone to restore their bodies after a failed alchemical experiment.",
+      "release_date": "April 5, 2009",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVsCNqPYCdbZbXlIpWwNSqrsjfv6xTdvjfoE3Qv29R4LgTZpby92RcNRqlWCOe"
+    },
+    {
+      "id": 8,
+      "name": "Neon Genesis Evangelion",
+      "description": "Teenagers pilot giant robots to protect Earth from mysterious beings known as Angels in this mecha anime with psychological depth.",
+      "release_date": "October 4, 1995",
+      "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwRPyKrA7vQDkygmZooQYPCPldnR5QF-3rheurH7D9ySAbN8OmSdpx5WBcUnW4"
+    },
+    {
+      "id": 9,
+      "name": "Cowboy Bebop",
+      "description": "Bounty hunters Spike Spiegel and Jet Black travel through space in the year 2071, pursuing criminals and facing their own pasts.",
+      "release_date": "April 3, 1998",
+      "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2ztSL7N2quYD68reb-I1qXAzYFXG1LZMu3CeNx3rL1LJcAorghwm3qA_M_-3S"
+    },
+    {
+      "id": 10,
+      "name": "Sword Art Online",
+      "description": "Players trapped in a virtual reality MMORPG must clear the game's levels to escape, while dealing with the consequences of their actions.",
+      "release_date": "July 8, 2012",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQybrYJvp6pq0OrOiFWqT6ybTS65ZccY26Tk2TLF-6OInX6DTL3-Ol7Ai7R2QHM"
+    },
+    {
+      "id": 11,
+      "name": "One Punch Man",
+      "description": "Saitama, a hero who can defeat any opponent with a single punch, seeks a worthy adversary in a world filled with powerful monsters and heroes.",
+      "release_date": "October 5, 2015",
+      "img": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65WlQLGrof_RVK95vu7pTSOiaOIwstQZg7A8ZKl8ZRFeBLQUGUFGZ5J01ErH-"
+    },
+    {
+      "id": 12,
+      "name": "Steins;Gate",
+      "description": "A group of friends accidentally discover a way to send messages to the past, leading to a series of time-traveling adventures and consequences.",
+      "release_date": "April 6, 2011",
+      "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkFCUKpCadysOt98PRZP0hG6pKnscEECa4DpOOUZC7fdFPZYoUEZOqSrZcGYu4"
+    }
+  ]
+  
