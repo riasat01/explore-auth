@@ -4,7 +4,7 @@ import { UserAuth } from "../auth-provider/AuthProvider";
 
 const LoginForm = () => {
 
-    const {continueWithGoogle} = useContext(UserAuth);
+    const {continueWithGoogle, logInWithEmail} = useContext(UserAuth);
 
     const handleLogin = (callback) => {
         callback()
@@ -15,6 +15,19 @@ const LoginForm = () => {
                 console.log(error.message);
             })
     }
+
+    // lofin with email and password
+
+    const handleLoginWithEmail = e => {
+        e.preventDefault()
+        logInWithEmail(e.target.email.value, e.target.password.value)
+        .then(userCredintial => {
+            console.log(userCredintial.user);
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
+    }
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col w-1/3 mx-auto">
@@ -23,7 +36,7 @@ const LoginForm = () => {
                 </div>
                 <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
                     <div className="card-body">
-                        <form >
+                        <form onSubmit={handleLoginWithEmail}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
