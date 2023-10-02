@@ -6,14 +6,14 @@ const LoginForm = () => {
 
     const {continueWithGoogle} = useContext(UserAuth);
 
-    const handleGoogleSignIn = () => {
-        continueWithGoogle()
-        .then(userCredintial => {
-            console.log(userCredintial.user);
-        })
-        .catch(error => {
-            console.log(error.message);
-        })
+    const handleLogin = (callback) => {
+        callback()
+            .then(userCredintial => {
+                console.log(userCredintial.user);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
     }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -44,7 +44,7 @@ const LoginForm = () => {
                             </div>
                         </form>
                         <section>
-                            <button onClick={handleGoogleSignIn} className="btn btn-primary w-full">Continue with Google</button>
+                            <button onClick={() => handleLogin(continueWithGoogle)} className="btn btn-primary w-full">Continue with Google</button>
                         </section>
                         <Link to={`/login/register-form`}>New here? Please Register</Link>
                     </div>

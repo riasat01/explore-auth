@@ -4,16 +4,30 @@ import { UserAuth } from '../auth-provider/AuthProvider';
 
 const RegisterForm = () => {
 
-    const { continueWithGoogle } = useContext(UserAuth);
+    const { continueWithGoogle, createAccountWithemail } = useContext(UserAuth);
 
-    const handleGoogleSignIn = () => {
-        continueWithGoogle()
+    const handleRegister = (callback) => {
+        callback()
             .then(userCredintial => {
                 console.log(userCredintial.user);
             })
             .catch(error => {
                 console.log(error.message);
             })
+    }
+
+    // register with email and password
+    
+    const handleRegisterWithEmail = e => {
+        e.preventDefault();
+        console.log(e.target.email.value, e.target.password.value);
+        createAccountWithemail(e.target.email.value, e.target.password.value)
+        .then(userCredintial => {
+            console.log(userCredintial.user);
+        })
+        .catch(error => {
+            console.log(error.message);
+        })
     }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -23,7 +37,7 @@ const RegisterForm = () => {
                 </div>
                 <div className="card w-full shadow-2xl bg-base-100">
                     <div className="card-body">
-                        <form >
+                        <form onSubmit={handleRegisterWithEmail}>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
@@ -46,11 +60,11 @@ const RegisterForm = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn btn-primary">Register</button>
                             </div>
                         </form>
                         <section>
-                            <button onClick={handleGoogleSignIn} className="btn btn-primary w-full">Continue with Google</button>
+                            <button onClick={() => handleRegister(continueWithGoogle)} className="btn btn-primary w-full">Continue with Google</button>
                         </section>
                         <Link to={`/login`}>Already have an account? Please  Login</Link>
                     </div>
